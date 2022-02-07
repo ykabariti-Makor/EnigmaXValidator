@@ -1,4 +1,7 @@
 const config = {
+  /**
+   * ! PROGRAMERS NOTICE: intital your own Object/array according to your functions in the code above
+   */
   password: {
     characterLen: 8,
     upperCase: 1,
@@ -13,6 +16,9 @@ const config = {
 };
 
 const setConfig = (configName, parameters) => {
+  /**
+   * ! PROGRAMERS NOTICE: intital your own configuration according to your functions in the code above
+   */
   switch (configName) {
     case 'password':
       config.password = {
@@ -22,8 +28,8 @@ const setConfig = (configName, parameters) => {
         num: parameters.num === null || parameters.num === undefined || parameters.num === 0 ? undefined : parameters.num,
         symbol: parameters.symbol === null || parameters.symbol === undefined || parameters.symbol === '' ? undefined : parameters.symbol,
       };
-      console.log(config.password)
-      // return config
+      console.log(config.password);
+    // return config
   }
 };
 
