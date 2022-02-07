@@ -39,7 +39,7 @@ function tagSplitter2(str, userSeparator){
         inferredSeparator = countsArr[0][0];
     }
 
-    //moving from the separator as a string to a regex that represent it correctly
+    //moving from the separator as a string to a regex that represents it correctly
 
     let inferredReg;
     if(inferredSeparator === " "){
