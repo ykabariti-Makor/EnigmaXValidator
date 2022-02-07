@@ -11,7 +11,7 @@ function tagSplitter(str){
     
 }
 
-//Version 2 - separator is inferred from input string - the character that shows up the most that is neither a digint nor an alphanumeric character
+//Version 2 - separator is inferred from input string - the character that shows up the most that is neither a digit nor an alphanumeric character
 
 function tagSplitter2(str, userSeparator){
     let inferredSeparator;
@@ -38,6 +38,8 @@ function tagSplitter2(str, userSeparator){
         //saving either the only candidate or the candidate with highest count
         inferredSeparator = countsArr[0][0];
     }
+
+    //moving from the separator as a string to a regex that represent it correctly
 
     let inferredReg;
     if(inferredSeparator === " "){
